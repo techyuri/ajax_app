@@ -8,6 +8,11 @@ class PostsController < ApplicationController
   end
 
   def create
+<<<<<<< Updated upstream
     Post.create(content: params[:content])
+=======
+    post = Post.create(content: params[:content])
+    render json:{ post: post }
+>>>>>>> Stashed changes
   end
 end
